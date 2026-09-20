@@ -109,10 +109,10 @@ h2{font-size:clamp(2.1rem,6vw,4.5rem);font-weight:400;line-height:.95;text-trans
       <h3 id="trackTitle">Texas Hold 'Em</h3>
       <p id="trackDesc">Texas Hold &#39;Em fala sobre confiança, liberdade e viver o momento, usando a energia de uma pista de dança para transformar uma noite em celebração.</p>
       <div class="tracks">
-        <button class="track active" data-file="audio/texas.mp3" data-title="Texas Hold 'Em" data-desc="Texas Hold 'Em fala sobre confiança, liberdade e viver o momento, usando a energia de uma pista de dança para transformar uma noite em celebração.">01 · Texas Hold 'Em</button>
-        <button class="track" data-file="audio/crazy.mp3" data-title="Crazy in Love" data-desc="Crazy in Love retrata aquela paixão intensa que toma conta da pessoa: desejo, euforia e a sensação de estar completamente envolvida por alguém.">02 · Crazy in Love</button>
-        <button class="track" data-file="audio/halo.mp3" data-title="Halo" data-desc="Halo fala sobre enxergar alguém como uma presença luminosa e transformadora, alguém que traz proteção, amor e uma sensação de segurança.">03 · Halo</button>
-        <button class="track" data-file="audio/love.mp3" data-title="Love On Top" data-desc="Love On Top celebra um amor que supera dificuldades e coloca a felicidade de estar com aquela pessoa acima de tudo.">04 · Love On Top</button>
+        <button class="track active" data-file="texas.mp3" data-title="Texas Hold 'Em" data-desc="Texas Hold 'Em fala sobre confiança, liberdade e viver o momento, usando a energia de uma pista de dança para transformar uma noite em celebração.">01 · Texas Hold 'Em</button>
+        <button class="track" data-file="crazy.mp3" data-title="Crazy in Love" data-desc="Crazy in Love retrata aquela paixão intensa que toma conta da pessoa: desejo, euforia e a sensação de estar completamente envolvida por alguém.">02 · Crazy in Love</button>
+        <button class="track" data-file="halo.mp3" data-title="Halo" data-desc="Halo fala sobre enxergar alguém como uma presença luminosa e transformadora, alguém que traz proteção, amor e uma sensação de segurança.">03 · Halo</button>
+        <button class="track" data-file="love.mp3" data-title="Love On Top" data-desc="Love On Top celebra um amor que supera dificuldades e coloca a felicidade de estar com aquela pessoa acima de tudo.">04 · Love On Top</button>
       </div>
     </div>
   </div>
@@ -168,7 +168,7 @@ const desc=document.getElementById('trackDesc');
 const tracks=[...document.querySelectorAll('.track')];
 function toggle(){
   if(!audio.src){ audio.src=tracks.find(t=>t.classList.contains('active')).dataset.file; }
-  if(audio.paused){ audio.play().then(()=>{vinyl.classList.add('playing');tonearm.classList.add('playing');playBtn.textContent='❚❚ pausar faixa'}).catch(()=>{playBtn.textContent='▶ coloque os MP3 na pasta audio/'}); }
+  if(audio.paused){ audio.play().then(()=>{vinyl.classList.add('playing');tonearm.classList.add('playing');playBtn.textContent='❚❚ pausar faixa'}).catch(()=>{playBtn.textContent='▶ coloque os MP3 na mesma pasta do index.html'}); }
   else {audio.pause();vinyl.classList.remove('playing');tonearm.classList.remove('playing');playBtn.textContent='▶ tocar faixa'}
 }
 playBtn.addEventListener('click',toggle);
