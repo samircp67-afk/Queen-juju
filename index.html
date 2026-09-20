@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beyoncé — Divine Archive</title>
+<meta name="description" content="Um arquivo visual e musical dedicado à Beyoncé — eras, discos, palco e momentos inesquecíveis.">
+<style>
+:root{
+  --bg:#090707;
+  --paper:#f1e4c7;
+  --gold:#d7ad5b;
+  --gold2:#ffe08a;
+  --wine:#5b1720;
+  --cream:#fff5dc;
+  --muted:#b9aa91;
+  --line:rgba(215,173,91,.28);
+  --shadow:0 25px 70px rgba(0,0,0,.55);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:radial-gradient(circle at 50% -10%,#3a2020 0,#120b0b 35%,var(--bg) 70%);color:var(--cream);font-family:Georgia,'Times New Roman',serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.13;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:5px 5px;mix-blend-mode:soft-light}
+a{color:inherit;text-decoration:none}
+button{font:inherit}
+
+.cover{min-height:100svh;display:grid;place-items:center;padding:28px;position:relative;overflow:hidden}
+.cover:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.78));z-index:1}
+.cover-bg{position:absolute;inset:0;background:url('https://imageio.forbes.com/specials-images/imageserve/6899f68c8e7044daa5d2086a/0x0.jpg?fit=bounds&format=jpg&height=1600&width=2400') center/cover no-repeat;filter:grayscale(.15) contrast(1.08) brightness(.55);transform:scale(1.03)}
+.cover-inner{position:relative;z-index:2;text-align:center;max-width:950px}
+.eyebrow{letter-spacing:.38em;text-transform:uppercase;color:var(--gold2);font-size:.72rem;margin-bottom:22px}
+.cover h1{font-size:clamp(3.1rem,11vw,7rem);line-height:.76;letter-spacing:-.07em;text-transform:uppercase;text-shadow:0 8px 40px #000;margin-bottom:22px}
+.cover h1 span{display:block;font-size:.22em;letter-spacing:.48em;line-height:1.8;color:var(--gold2);margin-left:.48em}
+.cover p{max-width:620px;margin:0 auto;color:#f5ead3;font-size:1.02rem;line-height:1.8}
+.enter{display:inline-flex;margin-top:34px;padding:15px 27px;border:1px solid var(--gold);border-radius:999px;color:var(--gold2);background:rgba(20,10,10,.58);backdrop-filter:blur(8px);letter-spacing:.16em;text-transform:uppercase;font-size:.72rem;transition:.3s}
+.enter:hover{background:var(--gold);color:#1a0e0a;transform:translateY(-3px);box-shadow:0 12px 35px rgba(215,173,91,.22)}
+
+main{max-width:1180px;margin:auto;padding:70px 22px 100px}
+.section{padding:70px 0;position:relative}
+.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:32px;border-bottom:1px solid var(--line);padding-bottom:18px}
+.kicker{color:var(--gold);font-size:.7rem;letter-spacing:.28em;text-transform:uppercase}
+h2{font-size:clamp(2.1rem,6vw,4.5rem);font-weight:400;line-height:.95;text-transform:uppercase}
+.sub{color:var(--muted);max-width:520px;line-height:1.7;font-size:.95rem}
+
+.book-intro{display:grid;grid-template-columns:1.1fr .9fr;gap:34px;align-items:stretch}
+.paper{background:linear-gradient(145deg,#f8edd4,#d8c59f);color:#1a1110;padding:42px;border-radius:4px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.paper:before{content:"";position:absolute;inset:14px;border:1px solid rgba(80,48,23,.24);pointer-events:none}
+.paper h3{font-size:2rem;font-weight:400;margin-bottom:14px}.paper p{line-height:1.85;color:#4b3930}
+.quote{margin-top:25px;padding-top:18px;border-top:1px solid rgba(80,48,23,.22);font-style:italic;color:#654c3b}
+.photo-card{min-height:410px;border:1px solid var(--line);background:#120c0c url('https://s2-oglobo.glbimg.com/KqcOZyK2kHA3IeCNKpZ2nKd4jYs%3D/1200x/smart/filters%3Acover%28%29%3Astrip_icc%28%29/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2023/L/z/kNVw4jS9iy71wojBBIdA/reinaissence.png') center/cover no-repeat;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.photo-card .caption{position:absolute;bottom:0;left:0;right:0;padding:38px 24px 22px;background:linear-gradient(transparent,rgba(0,0,0,.9));font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:#f3e4c4}
+
+.vinyl-wrap{display:grid;grid-template-columns:430px 1fr;gap:48px;align-items:center;background:linear-gradient(135deg,rgba(91,23,32,.55),rgba(22,13,13,.8));border:1px solid var(--line);padding:38px;box-shadow:var(--shadow)}
+.turntable{position:relative;text-align:center;padding-top:18px}.vinyl{width:min(390px,75vw);aspect-ratio:1;border-radius:50%;margin:auto;background:repeating-radial-gradient(circle,#111 0 2px,#191919 2px 4px),conic-gradient(from 0deg,#080808,#3d3d3d,#080808,#292929,#080808);box-shadow:0 25px 55px rgba(0,0,0,.65),inset 0 0 0 10px #070707;position:relative;animation:spin 8s linear infinite;animation-play-state:paused;transition:background .35s,box-shadow .35s}.tonearm{position:absolute;right:6%;top:5px;width:150px;height:175px;z-index:5;pointer-events:none;transform:rotate(0deg);transform-origin:88% 12%;transition:transform .45s ease}.tonearm:before{content:'';position:absolute;right:0;top:0;width:24px;height:24px;border-radius:50%;background:radial-gradient(circle,#eee 0 28%,#777 30% 55%,#222 58%);box-shadow:0 3px 10px #000}.tonearm:after{content:'';position:absolute;right:14px;top:18px;width:7px;height:140px;border-radius:8px;background:linear-gradient(90deg,#555,#ddd,#555);transform:rotate(-27deg);transform-origin:top center;box-shadow:0 2px 8px #000}.tonearm.playing{transform:rotate(8deg)}
+.vinyl.playing{animation-play-state:running}.vinyl.diamond{background:repeating-radial-gradient(circle,rgba(235,248,255,.85) 0 2px,rgba(90,130,155,.9) 2px 4px),conic-gradient(#eefcff,#7ea8c2,#ffffff,#6e94ad,#eefcff);box-shadow:0 0 35px rgba(190,235,255,.5),0 25px 55px rgba(0,0,0,.65),inset 0 0 0 10px #dff6ff}.vinyl.gold{background:repeating-radial-gradient(circle,#6d4b12 0 2px,#c99b35 2px 4px),conic-gradient(#8d5f12,#f4d47b,#9d6a16,#e7bd58,#8d5f12);box-shadow:0 0 35px rgba(215,173,91,.45),0 25px 55px rgba(0,0,0,.65),inset 0 0 0 10px #5c3c0c}.vinyl.silver{background:repeating-radial-gradient(circle,#747474 0 2px,#d7d7d7 2px 4px),conic-gradient(#777,#f4f4f4,#aaa,#fff,#777);box-shadow:0 0 35px rgba(220,220,220,.35),0 25px 55px rgba(0,0,0,.65),inset 0 0 0 10px #666}.vinyl.ruby{background:repeating-radial-gradient(circle,#3a0209 0 2px,#9b0f22 2px 4px),conic-gradient(#4d0711,#e32b4a,#780b1b,#ff5268,#4d0711);box-shadow:0 0 35px rgba(225,30,65,.5),0 25px 55px rgba(0,0,0,.65),inset 0 0 0 10px #35040b}
+.vinyl:before{content:"BEYONCÉ";position:absolute;inset:34%;border-radius:50%;background:radial-gradient(circle,#d8ad55 0 8%,#751d25 9% 100%);display:grid;place-items:center;color:#fff1cf;font-weight:bold;letter-spacing:.12em;font-size:.8rem;box-shadow:0 0 0 8px #111}
+.vinyl:after{content:"";position:absolute;left:49%;top:49%;width:2%;aspect-ratio:1;border-radius:50%;background:#e6d5b0}
+@keyframes spin{to{transform:rotate(360deg)}}
+.play-btn{margin-top:24px;border:1px solid var(--gold);background:var(--gold);color:#180d09;padding:13px 24px;border-radius:999px;cursor:pointer;text-transform:uppercase;letter-spacing:.15em;font-size:.7rem;font-weight:bold}
+.track-info .label{color:var(--gold);text-transform:uppercase;letter-spacing:.2em;font-size:.68rem}.track-info h3{font-size:clamp(2rem,5vw,4rem);font-weight:400;margin:8px 0}.track-info p{color:var(--muted);line-height:1.7;max-width:580px}
+.tracks{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:24px}.track{padding:13px 14px;border:1px solid rgba(215,173,91,.17);background:rgba(0,0,0,.18);color:#eadfc9;cursor:pointer;text-align:left}.track:hover,.track.active{border-color:var(--gold);background:rgba(215,173,91,.08)}
+
+.eras{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.era{min-height:270px;border:1px solid var(--line);padding:20px;display:flex;flex-direction:column;justify-content:end;background:linear-gradient(180deg,rgba(0,0,0,.05),rgba(0,0,0,.75)),var(--img) center/cover;transition:.35s;position:relative}.era:hover{transform:translateY(-7px);box-shadow:0 20px 50px rgba(0,0,0,.4)}.era small{color:var(--gold2);letter-spacing:.16em}.era h3{font-size:1.65rem;font-weight:400;margin:5px 0}.era p{font-size:.8rem;color:#ddd0b8;line-height:1.5}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.gallery figure{min-height:330px;margin:0;position:relative;overflow:hidden;border:1px solid var(--line);background:#161010}.gallery img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.9);transition:.5s}.gallery figure img{background:#241717}.gallery figure{background:#241717}.gallery figure:hover img{transform:scale(1.05)}.gallery figcaption{position:absolute;inset:auto 0 0;padding:40px 16px 16px;background:linear-gradient(transparent,#080606);font-size:.75rem;color:#eadfc9;letter-spacing:.08em}
+
+.tours{display:grid;gap:12px}.tour{display:grid;grid-template-columns:160px 1fr auto;gap:20px;align-items:center;padding:20px;border:1px solid var(--line);background:rgba(255,255,255,.025)}.tour .year{font-size:2.1rem;color:var(--gold)}.tour h3{font-size:1.35rem;font-weight:400}.tour p{color:var(--muted);font-size:.86rem;margin-top:5px}.badge{font-size:.65rem;text-transform:uppercase;letter-spacing:.15em;border:1px solid var(--gold);padding:7px 10px;color:var(--gold2)}
+
+.countdown{margin:30px auto 10px;max-width:560px;padding:22px;border:1px solid var(--gold);background:rgba(10,5,5,.72);box-shadow:0 0 25px rgba(215,173,91,.18),inset 0 0 25px rgba(215,173,91,.05);border-radius:4px}.countdown-title{font-size:.7rem;letter-spacing:.35em;color:var(--gold2);margin-bottom:10px}.timer{font-family:Georgia,serif;font-size:clamp(2rem,7vw,4rem);letter-spacing:.08em;color:var(--cream);text-shadow:0 0 18px rgba(255,224,138,.35)}
+.final{min-height:65vh;display:grid;place-items:center;text-align:center;border-top:1px solid var(--line)}.final h2{font-size:clamp(3rem,9vw,7rem)}.final p{max-width:650px;margin:20px auto;color:var(--muted);line-height:1.8}.source-note{font-size:.72rem;color:#766b5b;margin-top:30px}
+
+@media(max-width:900px){.book-intro,.vinyl-wrap{grid-template-columns:1fr}.eras{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:1fr 1fr}.tour{grid-template-columns:80px 1fr}.badge{display:none}}
+@media(max-width:560px){main{padding-inline:15px}.section{padding:48px 0}.paper{padding:28px}.eras,.gallery,.tracks{grid-template-columns:1fr}.photo-card{min-height:360px}.vinyl-wrap{padding:22px}.vinyl{width:80vw}.cover h1{font-size:17vw;line-height:.82}.section-head{display:block}.section-head .sub{margin-top:12px}}
+</style>
+</head>
+<body>
+<section class="cover">
+  <div class="cover-bg"></div>
+  <div class="cover-inner">
+    <div class="eyebrow">The Queen · Divine Archive · V1</div>
+    <h1>Beyoncé<span>an album that became a universe</span></h1>
+    <p>Um site pensado em você e somente para você,Espero que goste e vai ter muita coisa da Beyoncé</p>
+    <a class="enter" href="#arquivo">Queen Beyoncé ↓</a>
+  </div>
+</section>
+
+<main id="arquivo">
+<section class="section">
+  <div class="section-head"><div><div class="kicker">01 · abertura</div><h2>Queen Beyoncé</h2></div><p class="sub"></p></div>
+  <div class="book-intro">
+    <article class="paper">
+      <h3>Queen Bey.</h3>
+      <p>esse é um Álbum pensado em você,eu espero mesmo que goste de um álbum apenas da sua diva, Exclusivo !</p>
+      <div class="quote">“The most alluring thing a woman can have is confidence.”</div>
+    </article>
+    <div class="photo-card" role="img" aria-label="Beyoncé em performance"><div class="caption">Renaissance World Tour · 2023</div></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head"><div><div class="kicker">02 · Queen Beyoncé</div><h2>Álbum</h2></div><p class="sub"></p></div>
+  <div class="vinyl-wrap">
+    <div class="turntable">
+      <div class="tonearm" id="tonearm"></div><div class="vinyl diamond" id="vinyl"></div>
+      <button class="play-btn" id="playBtn">▶ tocar faixa</button>
+      <audio id="audio" preload="metadata"></audio>
+    </div>
+    <div class="track-info">
+      <div class="label">Ouça as músicas da rainha</div>
+      <h3 id="trackTitle">Texas Hold 'Em</h3>
+      <p id="trackDesc">Texas Hold &#39;Em fala sobre confiança, liberdade e viver o momento, usando a energia de uma pista de dança para transformar uma noite em celebração.</p>
+      <div class="tracks">
+        <button class="track active" data-file="audio/texas.mp3" data-title="Texas Hold 'Em" data-desc="Texas Hold 'Em fala sobre confiança, liberdade e viver o momento, usando a energia de uma pista de dança para transformar uma noite em celebração.">01 · Texas Hold 'Em</button>
+        <button class="track" data-file="audio/crazy.mp3" data-title="Crazy in Love" data-desc="Crazy in Love retrata aquela paixão intensa que toma conta da pessoa: desejo, euforia e a sensação de estar completamente envolvida por alguém.">02 · Crazy in Love</button>
+        <button class="track" data-file="audio/halo.mp3" data-title="Halo" data-desc="Halo fala sobre enxergar alguém como uma presença luminosa e transformadora, alguém que traz proteção, amor e uma sensação de segurança.">03 · Halo</button>
+        <button class="track" data-file="audio/love.mp3" data-title="Love On Top" data-desc="Love On Top celebra um amor que supera dificuldades e coloca a felicidade de estar com aquela pessoa acima de tudo.">04 · Love On Top</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head"><div><div class="kicker">03 · ERA</div><h2>Carreira</h2></div><p class="sub">Aqui estão algumas das fotos da diva</p></div>
+  <div class="eras">
+    <article class="era" style="--img:url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1000&q=80')"><small>2003</small><h3>Dangerously in Love</h3><p>O começo de uma nova fase solo.</p></article>
+    <article class="era" style="--img:url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1000&q=80')"><small>2013</small><h3>Beyoncé</h3><p>Álbum visual, surpresa e uma nova linguagem.</p></article>
+    <article class="era" style="--img:url('https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1000&q=80')"><small>2016</small><h3>Lemonade</h3><p>Um projeto audiovisual construído como narrativa.</p></article>
+    <article class="era" style="--img:url('https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1000&q=80')"><small>2024</small><h3>Cowboy Carter</h3><p>A era country e o segundo ato da trilogia.</p></article>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head"><div><div class="kicker">04 · galeria</div><h2>No palco...</h2></div><p class="sub">aqui estão algumas fotos</p></div>
+  <div class="gallery">
+    <figure><img src="https://hips.hearstapps.com/hmg-prod/images/beyonce-cowboy-carter-tour-tickets-68371699cb502.jpg" alt="Beyoncé em performance aérea no Cowboy Carter Tour" loading="lazy"><figcaption>Cowboy Carter Tour · performance aérea</figcaption></figure>
+    <figure><img src="https://s2-oglobo.glbimg.com/KqcOZyK2kHA3IeCNKpZ2nKd4jYs%3D/1200x/smart/filters%3Acover%28%29%3Astrip_icc%28%29/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2023/L/z/kNVw4jS9iy71wojBBIdA/reinaissence.png" alt="Beyoncé no cavalo espelhado do Renaissance World Tour" loading="lazy"><figcaption>Renaissance World Tour · espetáculo</figcaption></figure>
+    <figure><img src="https://imageio.forbes.com/specials-images/imageserve/6899f68c8e7044daa5d2086a/0x0.jpg?fit=bounds&format=jpg&height=900&width=1600" alt="Beyoncé e dançarinas durante o Cowboy Carter Tour" loading="lazy"><figcaption>Cowboy Carter · dança e presença de palco</figcaption></figure>
+    <figure><img src="https://image-cdn.hypb.st/https%3A%2F%2Fbae.hypebeast.com%2Ffiles%2F2025%2F02%2F24%2Fbeyonce-tour-cowboy-carter-1.jpg?cbr=1&fit=max&q=90&w=1260" alt="Beyoncé no palco do Cowboy Carter Tour" loading="lazy"><figcaption>Cowboy Carter · palco e luzes</figcaption></figure>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head"><div><div class="kicker">05 · Shows</div><h2>Onde ela arrasou</h2></div><p class="sub">Alguns dos shows e turnês que marcaram a carreira da diva.</p></div>
+  <div class="tours">
+    <article class="tour"><div class="year">2013</div><div><h3>The Mrs. Carter Show World Tour</h3><p>Uma das grandes turnês da era pós-4.</p></div><span class="badge">show</span></article>
+    <article class="tour"><div class="year">2018</div><div><h3>On the Run II</h3><p>A turnê conjunta com JAY-Z.</p></div><span class="badge">show</span></article>
+    <article class="tour"><div class="year">2023</div><div><h3>Renaissance World Tour</h3><p>Uma produção de escala monumental que atravessou o mundo.</p></div><span class="badge">show</span></article>
+    <article class="tour"><div class="year">2025</div><div><h3>Cowboy Carter Tour</h3><p>A era Cowboy Carter levada ao palco.</p></div><span class="badge">show</span></article>
+  </div>
+</section>
+
+<section class="final section">
+  <div>
+    <div class="kicker">POR ENQUANTO É SÓ ISSO</div>
+    <h2>FOR JULIA</h2>
+    <div class="countdown" aria-label="Cronômetro de 30 dias"><div class="countdown-title">30 DIAS</div><div class="timer" id="countdown">30d 00:00:00</div></div><p>Eu pensei em você, você ama a Beyoncé, então nada mais justo do que um cantinho só dela,Relaxa que quando esse cronômetro terminar, Acredito que as coisas melhoraram entre nós,Mas esquece isso,Essa próxima aba que vou atualizar concerteza vai ser A PARTE,já que você ama a Beyoncé, Você vai ter um parte com seu nome no álbum,uma parte só sua,espero que goste</p>
+    <div class="source-note">Continua...</div>
+  </div>
+</section>
+</main>
+
+<script>
+const vinyl=document.getElementById('vinyl');
+const tonearm=document.getElementById('tonearm');
+const audio=document.getElementById('audio');
+const playBtn=document.getElementById('playBtn');
+const title=document.getElementById('trackTitle');
+const desc=document.getElementById('trackDesc');
+const tracks=[...document.querySelectorAll('.track')];
+function toggle(){
+  if(!audio.src){ audio.src=tracks.find(t=>t.classList.contains('active')).dataset.file; }
+  if(audio.paused){ audio.play().then(()=>{vinyl.classList.add('playing');tonearm.classList.add('playing');playBtn.textContent='❚❚ pausar faixa'}).catch(()=>{playBtn.textContent='▶ coloque os MP3 na pasta audio/'}); }
+  else {audio.pause();vinyl.classList.remove('playing');tonearm.classList.remove('playing');playBtn.textContent='▶ tocar faixa'}
+}
+playBtn.addEventListener('click',toggle);
+tracks.forEach((track,index)=>track.addEventListener('click',()=>{
+  tracks.forEach(t=>t.classList.remove('active'));track.classList.add('active');
+  vinyl.classList.remove('diamond','gold','silver','ruby');
+  vinyl.classList.add(['diamond','gold','silver','ruby'][index]);
+  title.textContent=track.dataset.title;desc.textContent=track.dataset.desc;audio.src=track.dataset.file;vinyl.classList.remove('playing');tonearm.classList.remove('playing');playBtn.textContent='▶ tocar faixa';
+}));
+audio.addEventListener('ended',()=>{vinyl.classList.remove('playing');tonearm.classList.remove('playing');playBtn.textContent='▶ tocar faixa'});
+
+const countdown=document.getElementById('countdown');
+const TIMER_KEY='beyonce_divine_archive_for_julia_deadline_v1';
+let deadline=localStorage.getItem(TIMER_KEY);
+if(!deadline){ deadline=Date.now()+30*24*60*60*1000; localStorage.setItem(TIMER_KEY,String(deadline)); }
+function updateCountdown(){
+  const remaining=Math.max(0,Number(deadline)-Date.now());
+  const totalSeconds=Math.floor(remaining/1000);
+  const days=Math.floor(totalSeconds/86400);
+  const hours=Math.floor(totalSeconds%86400/3600);
+  const minutes=Math.floor(totalSeconds%3600/60);
+  const seconds=totalSeconds%60;
+  countdown.textContent=`${days}d ${String(hours).padStart(2,'0')}:${String(minutes).padStart(2,'0')}:${String(seconds).padStart(2,'0')}`;
+}
+updateCountdown(); setInterval(updateCountdown,1000);
+</script>
+</body>
+</html>
