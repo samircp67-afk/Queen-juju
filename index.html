@@ -168,7 +168,7 @@ const desc=document.getElementById('trackDesc');
 const tracks=[...document.querySelectorAll('.track')];
 function toggle(){
   if(!audio.src){ audio.src=tracks.find(t=>t.classList.contains('active')).dataset.file; }
-  if(audio.paused){ audio.play().then(()=>{vinyl.classList.add('playing');tonearm.classList.add('playing');playBtn.textContent='❚❚ pausar faixa'}).catch(()=>{playBtn.textContent='▶ coloque os MP3 na mesma pasta do index.html'}); }
+  if(audio.paused){ audio.play().then(()=>{vinyl.classList.add('playing');tonearm.classList.add('playing');playBtn.textContent='❚❚ pausar faixa'}).catch(()=>{playBtn.textContent='▶ coloque os MP3 na pasta herbeyoncé'}); }
   else {audio.pause();vinyl.classList.remove('playing');tonearm.classList.remove('playing');playBtn.textContent='▶ tocar faixa'}
 }
 playBtn.addEventListener('click',toggle);
